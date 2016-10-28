@@ -1,18 +1,20 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class dragBag : MonoBehaviour
+public class draggingBag : MonoBehaviour
 {
     //mouse position:
     Vector2 mouseWorldPosition = Vector2.zero;
+    Vector3 initPosition = Vector3.zero;
 
+    
     //Is the bag dragging:
     bool isDragging = false;
 
     // Use this for initialization
     void Start ()
     {
-	
+        initPosition = transform.position;
 	}
 	
 	// Update is called once per frame
@@ -34,6 +36,10 @@ public class dragBag : MonoBehaviour
         if(isDragging == true)
         {
             hit.collider.transform.position = mouseWorldPosition;
+        }
+        else
+        {
+            transform.position = initPosition;
         }
 
     }
