@@ -1,20 +1,20 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class draggingBag : MonoBehaviour
+public class bagDragging : MonoBehaviour
 {
     //mouse position:
     Vector2 mouseWorldPosition = Vector2.zero;
-    Vector3 initPosition = Vector3.zero;
-
     
     //Is the bag dragging:
-    bool isDragging = false;
+    public bool isDragging = false;
+
+    bool isLocking = false;
 
     // Use this for initialization
     void Start ()
     {
-        initPosition = transform.position;
+
 	}
 	
 	// Update is called once per frame
@@ -26,21 +26,23 @@ public class draggingBag : MonoBehaviour
 
         if (hit.collider != null && Input.GetMouseButtonDown(0) && hit.collider.name == this.gameObject.name)
         {
-            isDragging = true;
+            Debug.Log(hit.collider.name);
+            isLocking = true;
         }
         else if(hit.collider == null || Input.GetMouseButtonUp(0))
         {
-            isDragging = false;
+            isLocking = false;
         }
 
-        if(isDragging == true)
+       
+        if(isLocking == true && hit.collider.name == this.gameObject.name)
         {
-            hit.collider.transform.position = mouseWorldPosition;
+            isDragging = true;
         }
         else
         {
-            transform.position = initPosition;
+            isDragging = false;
         }
-
+        
     }
 }
