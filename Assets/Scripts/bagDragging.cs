@@ -26,7 +26,6 @@ public class bagDragging : MonoBehaviour
 
         if (hit.collider != null && Input.GetMouseButtonDown(0) && hit.collider.name == this.gameObject.name)
         {
-            Debug.Log(hit.collider.name);
             isLocking = true;
         }
         else if(hit.collider == null || Input.GetMouseButtonUp(0))

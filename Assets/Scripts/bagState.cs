@@ -3,34 +3,30 @@ using System.Collections;
 
 public class bagState : MonoBehaviour
 {
-    public float turnSpeed = 50f;
-
+    float turnSpeed = 50f;
     //init position:
     Vector3 initPosition = Vector3.zero;
 
     //mouse position:
     Vector2 mouseWorldPosition = Vector2.zero;
 
-    //Used???
-    bool available = true;
-
-    bagDragging Dragging;
-    bagCollision Collision;
+    //game parameters:
+    public GameObject parameterObject;
+    gameParameters parameters;
 
     // Use this for initialization
     void Start ()
     {
         initPosition = transform.position;
-        Dragging = this.GetComponent<bagDragging>();
-        Collision = this.GetComponent<bagCollision>();
-	}
+        parameters = parameterObject.GetComponent<gameParameters>();
+    }
 	
 	// Update is called once per frame
 	void Update ()
     {
         mouseWorldPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
-        if (Dragging.isDragging == true && available == true)
+        if (this.GetComponent<bagDragging>().isDragging == true && parameters.bagAvailable == true)
         {
             this.transform.position = mouseWorldPosition;
         }
@@ -39,8 +35,9 @@ public class bagState : MonoBehaviour
             transform.position = initPosition;
         }
 
-        if(Collision.isColliding == true && Input.GetMouseButtonUp(0))
+        if(this.GetComponent<bagCollision>().isColliding == true && parameters.bagAvailable == true && Input.GetMouseButtonUp(0))
         {
+            parameters.bagAvailable = false;
             StartCoroutine(rotate());
         }
 
@@ -57,7 +54,6 @@ public class bagState : MonoBehaviour
             yield return 0;
         }
 
-        available = false;
         transform.rotation = Quaternion.identity;
         this.gameObject.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0.5f);
     }
