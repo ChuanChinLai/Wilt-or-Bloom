@@ -1,0 +1,374 @@
+fileFormatVersion: 2
+guid: 0be658424303aa74d96fff306cd38e01
+timeCreated: 1478401705
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: NEW NEW water pump_0
+    21300002: NEW NEW water pump_1
+    21300004: NEW NEW water pump_2
+    21300006: NEW NEW water pump_3
+    21300008: NEW NEW water pump_4
+    21300010: NEW NEW water pump_5
+    21300012: NEW NEW water pump_6
+    21300014: NEW NEW water pump_7
+    21300016: NEW NEW water pump_8
+    21300018: NEW NEW water pump_9
+    21300020: NEW NEW water pump_10
+    21300022: NEW NEW water pump_11
+    21300024: NEW NEW water pump_12
+    21300026: NEW NEW water pump_13
+    21300028: NEW NEW water pump_14
+    21300030: NEW NEW water pump_15
+    21300032: NEW NEW water pump_16
+    21300034: NEW NEW water pump_17
+    21300036: NEW NEW water pump_18
+    21300038: NEW NEW water pump_19
+    21300040: NEW NEW water pump_20
+    21300042: water pump_0
+    21300044: water pump_1
+    21300046: water pump_2
+    21300048: water pump_3
+    21300050: water pump_4
+    21300052: water pump_5
+    21300054: water pump_6
+    21300056: water pump_7
+    21300058: water pump_8
+    21300060: water pump_9
+    21300062: water pump_10
+    21300064: water pump_11
+    21300066: water pump_12
+    21300068: water pump_13
+    21300070: water pump_14
+    21300072: water pump_15
+    21300074: water pump_16
+    21300076: water pump_17
+    21300078: water pump_18
+    21300080: water pump_19
+    21300082: water pump_20
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: water pump_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2528
+        width: 375
+        height: 632
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: water pump_1
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 2528
+        width: 375
+        height: 632
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: water pump_2
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 2528
+        width: 375
+        height: 632
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: water pump_3
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 2528
+        width: 375
+        height: 632
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: water pump_4
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 2528
+        width: 375
+        height: 632
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: water pump_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1896
+        width: 375
+        height: 632
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: water pump_6
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 1896
+        width: 375
+        height: 632
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: water pump_7
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 1896
+        width: 375
+        height: 632
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: water pump_8
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 1896
+        width: 375
+        height: 632
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: water pump_9
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1896
+        width: 375
+        height: 632
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: water pump_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1264
+        width: 375
+        height: 632
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: water pump_11
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 1264
+        width: 375
+        height: 632
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: water pump_12
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 1264
+        width: 375
+        height: 632
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: water pump_13
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 1264
+        width: 375
+        height: 632
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: water pump_14
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1264
+        width: 375
+        height: 632
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: water pump_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 632
+        width: 375
+        height: 632
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: water pump_16
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 632
+        width: 375
+        height: 632
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: water pump_17
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 632
+        width: 375
+        height: 632
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: water pump_18
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 632
+        width: 375
+        height: 632
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: water pump_19
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 632
+        width: 375
+        height: 632
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: water pump_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 375
+        height: 632
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
