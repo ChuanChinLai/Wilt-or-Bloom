@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class bagDragging : MonoBehaviour
+public class objDragging : MonoBehaviour
 {
     //mouse position:
     Vector2 mouseWorldPosition = Vector2.zero;

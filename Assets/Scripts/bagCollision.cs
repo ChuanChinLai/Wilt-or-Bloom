@@ -3,7 +3,6 @@ using System.Collections;
 
 public class bagCollision : MonoBehaviour
 {
-
     public bool isColliding = false;
 
 	// Use this for initialization

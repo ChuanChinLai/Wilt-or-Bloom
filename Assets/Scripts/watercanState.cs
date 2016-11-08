@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class bagState : MonoBehaviour
+public class watercanState : MonoBehaviour
 {
     //rotation speed
     float turnSpeed = 50f;
@@ -28,7 +28,7 @@ public class bagState : MonoBehaviour
     {
         mouseWorldPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
-        if (this.GetComponent<objDragging>().isDragging == true && parameters.fertilizerReady == false)
+        if (this.GetComponent<objDragging>().isDragging == true && parameters.waterReady == false)
         {
             this.transform.position = mouseWorldPosition;
         }
@@ -37,22 +37,21 @@ public class bagState : MonoBehaviour
             transform.position = initPosition;
         }
 
-        if(this.GetComponent<bagCollision>().isColliding == true && parameters.fertilizerReady == false && Input.GetMouseButtonUp(0))
+        if (this.GetComponent<bagCollision>().isColliding == true && parameters.waterReady == false && parameters.fertilizerReady == true && Input.GetMouseButtonUp(0))
         {
-            parameters.fertilizerReady = true;
+            parameters.waterReady = true;
             StartCoroutine(rotate());
         }
-
 
     }
 
     IEnumerator rotate()
     {
         //rotate 2 seconds
-        for(float i = 0; i <= 2; i += Time.deltaTime)
+        for (float i = 0; i <= 1.2; i += Time.deltaTime)
         {
-            transform.position = new Vector3(-2.5f, 0, 0);
-            transform.Rotate(Vector3.back, turnSpeed * Time.deltaTime);
+            transform.position = new Vector3(3.5f, 0, 0);
+            transform.Rotate(Vector3.forward, turnSpeed * Time.deltaTime);
             yield return 0;
         }
 

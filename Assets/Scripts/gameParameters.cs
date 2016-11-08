@@ -3,9 +3,14 @@ using System.Collections;
 
 public class gameParameters : MonoBehaviour
 {
-
-    public bool bagAvailable = true;
+    //game day
     public int day = 0;
+
+    public bool fertilizerReady = false;
+
+    public bool waterReady = false;
+
+
         
 
 	// Use this for initialization
