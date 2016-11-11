@@ -39,7 +39,6 @@ public class watercanState : MonoBehaviour
 
         if (this.GetComponent<bagCollision>().isColliding == true && parameters.waterReady == false && parameters.fertilizerReady == true && Input.GetMouseButtonUp(0))
         {
-            parameters.waterReady = true;
             StartCoroutine(rotate());
         }
 
@@ -55,6 +54,7 @@ public class watercanState : MonoBehaviour
             yield return 0;
         }
 
+        parameters.waterReady = true;
         transform.rotation = Quaternion.identity;
         this.gameObject.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0.5f);
     }

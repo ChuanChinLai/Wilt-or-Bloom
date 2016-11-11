@@ -39,7 +39,6 @@ public class bagState : MonoBehaviour
 
         if(this.GetComponent<bagCollision>().isColliding == true && parameters.fertilizerReady == false && Input.GetMouseButtonUp(0))
         {
-            parameters.fertilizerReady = true;
             StartCoroutine(rotate());
         }
 
@@ -55,6 +54,8 @@ public class bagState : MonoBehaviour
             transform.Rotate(Vector3.back, turnSpeed * Time.deltaTime);
             yield return 0;
         }
+
+        parameters.fertilizerReady = true;
 
         transform.rotation = Quaternion.identity;
         this.gameObject.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0.5f);
