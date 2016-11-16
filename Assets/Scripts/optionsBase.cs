@@ -2,10 +2,12 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
-public class optionsSystem : MonoBehaviour 
+public class optionsBase : MonoBehaviour 
 {
-    //dialogue and hints 
+    //question, options and hints 
     //Example: options[day][option index];
+    public List<string> questions = new List<string>();
+
     public List<List<string>> options = new List<List<string>>();
     public List<List<string>> hints = new List<List<string>>();
 
@@ -13,8 +15,9 @@ public class optionsSystem : MonoBehaviour
 	void Start () 
     {
         //Day 1: 
-        List<string> dailyOption = new List<string>();
+        questions.Add("D1QQ");
 
+        List<string> dailyOption = new List<string>();
         dailyOption.Add("D1O1");
         dailyOption.Add("D1O2");
         dailyOption.Add("D1O3");
@@ -26,10 +29,10 @@ public class optionsSystem : MonoBehaviour
         dailyHint.Add("D1H3");
         hints.Add(dailyHint);
 
-
         //Day 2:
-        dailyOption = new List<string>();
+        questions.Add("D2QQ");
 
+        dailyOption = new List<string>();
         dailyOption.Add("D2O1");
         dailyOption.Add("D2O2");
         dailyOption.Add("D2O3");
