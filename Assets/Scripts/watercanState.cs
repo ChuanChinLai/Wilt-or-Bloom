@@ -58,4 +58,10 @@ public class watercanState : MonoBehaviour
         transform.rotation = Quaternion.identity;
         this.gameObject.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0.5f);
     }
+
+
+    public void initState()
+    {
+        this.gameObject.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
+    }
 }

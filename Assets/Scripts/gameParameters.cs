@@ -3,15 +3,12 @@ using System.Collections;
 
 public class gameParameters : MonoBehaviour
 {
-    //game day
+    //game parameters
     public int day = 0;
 
     public bool fertilizerReady = false;
 
     public bool waterReady = false;
-
-
-        
 
 	// Use this for initialization
 	void Start ()
@@ -24,4 +21,12 @@ public class gameParameters : MonoBehaviour
     {
        
     }
+
+    public void gotoNextDay()
+    {
+        fertilizerReady = false;
+        waterReady = false;
+        day += 1;
+    }
+
 }

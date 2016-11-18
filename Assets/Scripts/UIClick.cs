@@ -4,6 +4,8 @@ using System.Collections;
 public class UIClick : MonoBehaviour
 {
     public GameObject popWindow;
+    public GameObject nightMask;
+
 
     public bool Isclicked = false;
 
@@ -16,7 +18,7 @@ public class UIClick : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-//        displayWindow();
+        
     }
 
     void displayWindow()
@@ -42,5 +44,5 @@ public class UIClick : MonoBehaviour
     {
         popWindow.SetActive(false);
     }
-
+        
 }
