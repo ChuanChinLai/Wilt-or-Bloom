@@ -56,6 +56,7 @@ public class bagState : MonoBehaviour
         }
 
         parameters.fertilizerReady = true;
+        parameters.setAnswers(this.gameObject.name);
 
         transform.rotation = Quaternion.identity;
         this.gameObject.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0.5f);
