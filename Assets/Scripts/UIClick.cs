@@ -3,6 +3,7 @@ using System.Collections;
 
 public class UIClick : MonoBehaviour
 {
+    public GameObject question;
     public GameObject popWindow;
     public GameObject nightMask;
 
@@ -37,12 +38,14 @@ public class UIClick : MonoBehaviour
     public void clickInfo()
     {
         popWindow.SetActive(true);
+        question.SetActive(false);
     }
 
 
     public void closeWindow()
     {
         popWindow.SetActive(false);
+        question.SetActive(true);
     }
         
 }

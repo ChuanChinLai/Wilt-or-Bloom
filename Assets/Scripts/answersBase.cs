@@ -12,8 +12,16 @@ public class answersBase : MonoBehaviour
 	void Start ()
     {
         //Day 1: 
+        bestAnswer.Add(0);
+        worstAnswer.Add(-1);
+
+        //Day 2: 
+        bestAnswer.Add(2);
+        worstAnswer.Add(1);
+
+        //Day 3: 
         bestAnswer.Add(1);
-        worstAnswer.Add(0);
+        worstAnswer.Add(2);
 	}
 	
 	// Update is called once per frame

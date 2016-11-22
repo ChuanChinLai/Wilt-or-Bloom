@@ -7,15 +7,26 @@ public class optionLoader : MonoBehaviour
     public GameObject optionObject;
     optionsBase optionbase;
 
-    public int day;
+    //game parameters:
+    public GameObject parameterObject;
+    gameParameters parameters;
+
     public int index;
+
     Text context;
+
+    void Awake()
+    {
+        parameters = parameterObject.GetComponent<gameParameters>();
+        optionbase = optionObject.GetComponent<optionsBase>();
+        context = this.GetComponent<Text>();
+    }
+
 
     // Use this for initialization
     public void Start ()
     {
-        optionbase = optionObject.GetComponent<optionsBase>();
-        context = this.GetComponent<Text>();
+
     }
 	
 	// Update is called once per frame
@@ -26,7 +37,11 @@ public class optionLoader : MonoBehaviour
 
     public virtual void updateText()
     {
-        context.text = optionbase.options[day][index];
+        context.text = optionbase.options[parameters.day][index];
     }
 
+    public gameParameters getParameters()
+    {
+        return parameters;
+    }
 }
