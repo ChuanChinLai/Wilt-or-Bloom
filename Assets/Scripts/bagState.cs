@@ -16,10 +16,15 @@ public class bagState : MonoBehaviour
     public GameObject parameterObject;
     gameParameters parameters;
 
+    //Fertilizer
+    public GameObject fertilizerObject;
+    ParticleSystem fertilizer;
+
     // Use this for initialization
     void Start ()
     {
         initPosition = transform.position;
+        fertilizer = fertilizerObject.GetComponent<ParticleSystem>();
         parameters = parameterObject.GetComponent<gameParameters>();
     }
 	
@@ -47,10 +52,20 @@ public class bagState : MonoBehaviour
 
     IEnumerator rotate()
     {
+
+
+
         //rotate 2 seconds
         for(float i = 0; i <= 2; i += Time.deltaTime)
         {
-            transform.position = new Vector3(-2.5f, 0, 0);
+            transform.position = new Vector3(-3.7f, 1.0f, 0);
+
+            if (i >= 1.0f)
+            {
+                fertilizerObject.transform.localPosition = new Vector3(-2.5f, 1.5f, -2.0f);
+                fertilizer.Play();
+            }
+                
             transform.Rotate(Vector3.back, turnSpeed * Time.deltaTime);
             yield return 0;
         }
@@ -59,6 +74,8 @@ public class bagState : MonoBehaviour
         parameters.setAnswers(this.gameObject.name);
 
         transform.rotation = Quaternion.identity;
+
+        fertilizerObject.transform.localPosition = new Vector3(-25.0f, 1.5f, -2.0f);
         this.gameObject.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0.5f);
     }
 
