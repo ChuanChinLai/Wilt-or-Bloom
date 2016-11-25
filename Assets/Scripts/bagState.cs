@@ -56,7 +56,7 @@ public class bagState : MonoBehaviour
 
 
         //rotate 2 seconds
-        for(float i = 0; i <= 2; i += Time.deltaTime)
+        for(float i = 0; i <= 2.0f; i += Time.deltaTime)
         {
             transform.position = new Vector3(-3.7f, 1.0f, 0);
 

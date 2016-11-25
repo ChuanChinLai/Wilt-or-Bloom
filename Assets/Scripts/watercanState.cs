@@ -4,7 +4,7 @@ using System.Collections;
 public class watercanState : MonoBehaviour
 {
     //rotation speed
-    float turnSpeed = 50f;
+    float turnSpeed = 20f;
 
     //init position:
     Vector3 initPosition = Vector3.zero;
@@ -16,11 +16,17 @@ public class watercanState : MonoBehaviour
     public GameObject parameterObject;
     gameParameters parameters;
 
+    //Water
+    public GameObject waterObject;
+    ParticleSystem water;
+
     // Use this for initialization
     void Start ()
     {
         initPosition = transform.position;
+
         parameters = parameterObject.GetComponent<gameParameters>();
+        water = waterObject.GetComponent<ParticleSystem>();
     }
 	
 	// Update is called once per frame
@@ -39,6 +45,7 @@ public class watercanState : MonoBehaviour
 
         if (this.GetComponent<bagCollision>().isColliding == true && parameters.waterReady == false && parameters.fertilizerReady == true && Input.GetMouseButtonUp(0))
         {
+            Debug.Log("GG");
             StartCoroutine(rotate());
         }
 
@@ -47,16 +54,26 @@ public class watercanState : MonoBehaviour
     IEnumerator rotate()
     {
         //rotate 2 seconds
-        for (float i = 0; i <= 1.2; i += Time.deltaTime)
+        for (float i = 0; i <= 2.0f; i += Time.deltaTime)
         {
+            water.Play();
             transform.position = new Vector3(3.5f, 0, 0);
             transform.Rotate(Vector3.forward, turnSpeed * Time.deltaTime);
+       
             yield return 0;
         }
 
         parameters.waterReady = true;
         transform.rotation = Quaternion.identity;
         this.gameObject.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0.5f);
+
+        water.transform.localPosition = new Vector3(-25.0f, 1.5f, -2.0f);
+    }
+
+    IEnumerator waterDisplay()
+    {
+        yield return new WaitForSeconds(0.5f);
+        water.Play();
     }
 
 

@@ -6,12 +6,15 @@ public class pumpWater : MonoBehaviour
     Animator animator;
     Vector2 mouseWorldPosition = Vector2.zero;
 
-    public GameObject water;
+    public GameObject waterObject;
+    ParticleSystem water;
+
 
     // Use this for initialization
     void Start()
     {
         animator = GetComponent<Animator>();
+        water = waterObject.GetComponent<ParticleSystem>();
     }
 
     // Update is called once per frame
@@ -27,11 +30,13 @@ public class pumpWater : MonoBehaviour
             if (animator.GetBool("play") == false)
             {
                 animator.SetBool("play", true);
+                StartCoroutine(waterDisplay());
             }
 
             if (animator.GetBool("ready") == false)
             {
                 animator.SetBool("ready", true);
+                StartCoroutine(waterDisplay());
                 StartCoroutine(reset());
             }
             
@@ -40,11 +45,15 @@ public class pumpWater : MonoBehaviour
 
     IEnumerator reset()
     {
-        for (float i = 0; i <= 0.75; i += Time.deltaTime)
-        {
-            yield return 0;
-        }
-
+        
+        yield return new WaitForSeconds(0.7f);
         animator.SetBool("ready", false);
     }
+
+    IEnumerator waterDisplay()
+    {
+        yield return new WaitForSeconds(0.5f);
+        water.Play();
+    }
+
 }
