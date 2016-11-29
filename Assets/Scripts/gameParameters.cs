@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -6,6 +7,7 @@ public class gameParameters : MonoBehaviour
 {
     //game parameters
     public int day = 0;
+    int day_MAX = 3;
 
     public bool fertilizerReady = false;
     public bool waterReady = false;
@@ -33,6 +35,13 @@ public class gameParameters : MonoBehaviour
         flowerUpdated = false;
 
         day += 1;
+
+        if (day == day_MAX)
+        {
+            Debug.Log("GOTO");
+          
+            SceneManager.LoadScene("Resource");
+        }
     }
 
 

@@ -4,6 +4,11 @@ using System.Collections;
 public class flowerState : MonoBehaviour 
 {
 
+    private int state = 2;
+
+    //Flower sprite: 
+    public Sprite [] flowerSprites;
+
     //game parameters:
     public GameObject parameterObject;
     gameParameters parameters;
@@ -36,16 +41,18 @@ public class flowerState : MonoBehaviour
 
                 if (parameters.playerAnswer[parameters.day] == answerbase.bestAnswer[parameters.day])
                 {
+                    state += 1;
                     Debug.Log("BEST");
                 }
                 else if (parameters.playerAnswer[parameters.day] == answerbase.worstAnswer[parameters.day])
                 {
+                    state -= 1;
                     Debug.Log("WORSE");
                 }
-                
+
+                GetComponent<SpriteRenderer>().sprite = flowerSprites[state];
             }
         }
 
     }
-        
 }
