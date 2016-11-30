@@ -38,8 +38,6 @@ public class gameParameters : MonoBehaviour
 
         if (day == day_MAX)
         {
-            Debug.Log("GOTO");
-          
             SceneManager.LoadScene("Resource");
         }
     }

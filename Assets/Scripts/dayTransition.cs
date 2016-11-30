@@ -8,12 +8,18 @@ public class dayTransition : MonoBehaviour
     public GameObject parameterObject;
     gameParameters parameters;
 
-    // Use this for initialization
+    //game BGM:
+    public GameObject BGM_Ojects;
+    BGMManager BGM_manager;
+
+    //night mask image:
     Image image;
 
+    // Use this for initialization
     void Start() 
     {
         image = GetComponent<Image>();
+        BGM_manager = BGM_Ojects.GetComponent<BGMManager>();
         parameters = parameterObject.GetComponent<gameParameters>();
     }
 
@@ -32,7 +38,10 @@ public class dayTransition : MonoBehaviour
 
     IEnumerator setAlpha()
     {
-        
+
+        //music transition day->night 
+        BGM_manager.musicTransition();
+
         for(float i = 0; i <= 2.5f; i += Time.deltaTime)
         {
             image.color = new Color(0.0f, 0.0f, 0.0f, i * 0.4f);
@@ -47,6 +56,8 @@ public class dayTransition : MonoBehaviour
             yield return 0;
         }
 
+        //music transition night->day 
+        BGM_manager.musicTransition();
 
         image.color = new Color(0.0f, 0.0f, 0.0f, 0.0f);
     }

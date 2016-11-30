@@ -23,19 +23,21 @@ public class BGMManager : MonoBehaviour
 	void Update () 
     {
         
-        if (Input.GetKeyDown(KeyCode.S))
-        {
-
-            if (_AudioSource.clip == _AudioClip_day)
-            {
-                _AudioSource.clip = _AudioClip_night;
-                _AudioSource.Play();
-            }
-            else
-            {
-                _AudioSource.clip = _AudioClip_day;
-                _AudioSource.Play();
-            }
-        }
 	}
+
+
+    public void musicTransition()
+    {
+        if (_AudioSource.clip == _AudioClip_day)
+        {
+            _AudioSource.clip = _AudioClip_night;
+            _AudioSource.Play();
+        }
+        else
+        {
+            _AudioSource.clip = _AudioClip_day;
+            _AudioSource.Play();
+        }
+    }
+        
 }
