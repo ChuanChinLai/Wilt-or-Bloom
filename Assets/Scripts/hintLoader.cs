@@ -7,6 +7,8 @@ public class hintLoader : optionLoader
     optionsBase optionbase;
     Text context;
 
+
+
     // Use this for initialization
     void Start ()
     {

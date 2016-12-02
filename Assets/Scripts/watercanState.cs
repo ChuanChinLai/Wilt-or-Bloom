@@ -56,7 +56,11 @@ public class watercanState : MonoBehaviour
         //rotate 2 seconds
         for (float i = 0; i <= 2.0f; i += Time.deltaTime)
         {
+            //Water Particle System
+            waterObject.transform.localPosition = new Vector3(1.3f, 0.35f, -0.5f);
             water.Play();
+
+            //Water Can Rotation
             transform.position = new Vector3(3.5f, 0, 0);
             transform.Rotate(Vector3.forward, turnSpeed * Time.deltaTime);
        

@@ -24,7 +24,7 @@ public class optionLoader : MonoBehaviour
 
 
     // Use this for initialization
-    public void Start ()
+    void Start ()
     {
 
     }
