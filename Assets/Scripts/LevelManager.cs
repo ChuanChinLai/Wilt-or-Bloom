@@ -9,6 +9,7 @@ public class LevelManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape)) 
         { 
+            
             if (Application.platform == RuntimePlatform.Android)
             {
                 Application.Quit();
