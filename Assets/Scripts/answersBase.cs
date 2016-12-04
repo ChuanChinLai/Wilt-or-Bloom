@@ -22,6 +22,10 @@ public class answersBase : MonoBehaviour
         //Day 3: 
         bestAnswer.Add(1);
         worstAnswer.Add(2);
+
+        //Day 4: 
+        bestAnswer.Add(0);
+        worstAnswer.Add(1);
 	}
 	
 	// Update is called once per frame

@@ -2,7 +2,8 @@
 using System.Collections;
 using UnityEngine.UI;
 
-public class hintLoader : optionLoader 
+
+public class optionResultLoader : optionLoader 
 {
     optionsBase optionbase;
     Text context;
@@ -17,6 +18,6 @@ public class hintLoader : optionLoader
     // Update is called once per frame
     public override void updateText()
     {
-        context.text = optionbase.hints[getParameters().day][getParameters().playerAnswer[getParameters().day]];
+        context.text = optionbase.options[getParameters().day][getParameters().playerAnswer[getParameters().day]];
     }
 }

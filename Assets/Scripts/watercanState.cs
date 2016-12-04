@@ -45,7 +45,6 @@ public class watercanState : MonoBehaviour
 
         if (this.GetComponent<bagCollision>().isColliding == true && parameters.waterReady == false && parameters.fertilizerReady == true && Input.GetMouseButtonUp(0))
         {
-            Debug.Log("GG");
             StartCoroutine(rotate());
         }
 

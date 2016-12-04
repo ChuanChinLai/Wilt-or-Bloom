@@ -34,7 +34,7 @@ public class optionLoader : MonoBehaviour
     {
         updateText();
 	}
-
+        
     public virtual void updateText()
     {
         context.text = optionbase.options[parameters.day][index];
