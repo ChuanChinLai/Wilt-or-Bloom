@@ -20,11 +20,12 @@ public class objDragging : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-        
+
+        Debug.Log(isDragging);
         mouseWorldPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         RaycastHit2D hit = Physics2D.Raycast(mouseWorldPosition, Vector2.zero);
 
-        if (hit.collider != null && Input.GetMouseButtonDown(0) && hit.collider.name == this.gameObject.name)
+        if (hit.collider != null && hit.collider.name == this.gameObject.name && Input.GetMouseButtonDown(0))
         {
             isLocking = true;
         }
@@ -32,9 +33,8 @@ public class objDragging : MonoBehaviour
         {
             isLocking = false;
         }
-
-       
-        if(isLocking == true && hit.collider.name == this.gameObject.name)
+            
+        if(isLocking == true)
         {
             isDragging = true;
         }

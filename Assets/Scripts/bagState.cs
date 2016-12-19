@@ -52,9 +52,6 @@ public class bagState : MonoBehaviour
 
     IEnumerator rotate()
     {
-
-
-
         //rotate 2 seconds
         for(float i = 0; i <= 2.0f; i += Time.deltaTime)
         {
