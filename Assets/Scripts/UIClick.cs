@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class UIClick : MonoBehaviour
@@ -39,7 +40,30 @@ public class UIClick : MonoBehaviour
     {
         popWindow.SetActive(true);
         question.SetActive(false);
+
+        popWindow.transform.GetChild(1).gameObject.SetActive(true);
+        popWindow.transform.GetChild(2).gameObject.SetActive(true);
+        popWindow.transform.GetChild(3).gameObject.SetActive(true);
+        popWindow.transform.GetChild(4).gameObject.SetActive(true);
+
+        popWindow.transform.GetChild(5).gameObject.SetActive(false);
     }
+
+    public void displayQuestion(GameObject iObject)
+    {
+        popWindow.SetActive(true);
+        question.SetActive(false);
+
+        popWindow.transform.GetChild(5).gameObject.SetActive(true);
+        popWindow.transform.GetChild(5).gameObject.GetComponent<Text>().text = iObject.GetComponent<Text>().text;
+
+
+        popWindow.transform.GetChild(1).gameObject.SetActive(false);
+        popWindow.transform.GetChild(2).gameObject.SetActive(false);
+        popWindow.transform.GetChild(3).gameObject.SetActive(false);
+        popWindow.transform.GetChild(4).gameObject.SetActive(false);
+    }
+
 
 
     public void closeWindow()
