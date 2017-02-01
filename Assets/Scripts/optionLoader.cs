@@ -5,15 +5,14 @@ using UnityEngine.UI;
 public class optionLoader : MonoBehaviour
 {
     public GameObject optionObject;
-    optionsBase optionbase;
+    protected optionsBase optionbase;
 
     //game parameters:
     public GameObject parameterObject;
     gameParameters parameters;
 
     public int index;
-
-    Text context;
+    protected Text context;
 
     void Awake()
     {

@@ -4,9 +4,6 @@ using UnityEngine.UI;
 
 public class questionLoader : optionLoader 
 {
-    optionsBase optionbase;
-    Text context;
-
     // Use this for initialization
     void Start ()
     {

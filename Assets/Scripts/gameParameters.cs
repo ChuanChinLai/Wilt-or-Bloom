@@ -7,7 +7,7 @@ public class gameParameters : MonoBehaviour
 {
     //game parameters
     public int day = 0;
-    int day_MAX = 3;
+    int day_MAX = 7;
 
     public bool fertilizerReady = false;
     public bool waterReady = false;
@@ -28,6 +28,12 @@ public class gameParameters : MonoBehaviour
 
     }
 
+    public void ResetEverything()
+    {
+        day = 0;
+        playerAnswer = new List<int>();
+    }
+
     public void gotoNextDay()
     {
         fertilizerReady = false;
@@ -45,7 +51,6 @@ public class gameParameters : MonoBehaviour
 
     public void setAnswers(string objectName)
     {
-
         switch (objectName)
         {
             case "blue bag":
