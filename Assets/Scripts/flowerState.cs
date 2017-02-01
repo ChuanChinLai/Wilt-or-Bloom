@@ -4,7 +4,7 @@ using System.Collections;
 public class flowerState : MonoBehaviour 
 {
 
-    private int state = 2;
+    private int state = 5;
 
     //Flower sprite: 
     public Sprite [] flowerSprites;
