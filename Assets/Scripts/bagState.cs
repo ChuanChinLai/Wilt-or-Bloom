@@ -46,8 +46,6 @@ public class bagState : MonoBehaviour
         {
             StartCoroutine(rotate());
         }
-
-
     }
 
     IEnumerator rotate()
@@ -80,6 +78,5 @@ public class bagState : MonoBehaviour
     {
         this.gameObject.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
     }
-
 
 }
