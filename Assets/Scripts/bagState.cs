@@ -4,7 +4,7 @@ using System.Collections;
 public class bagState : MonoBehaviour
 {
     //rotation speed
-    float turnSpeed = 50f;
+    float turnSpeed = 30f;
 
     //init position:
     Vector3 initPosition = Vector3.zero;
@@ -51,7 +51,7 @@ public class bagState : MonoBehaviour
     IEnumerator rotate()
     {
         //rotate 2 seconds
-        for(float i = 0; i <= 2.0f; i += Time.deltaTime)
+        for(float i = 0; i <= 3.0f; i += Time.deltaTime)
         {
             transform.position = new Vector3(-2.7f, 1.0f, 0);
 
