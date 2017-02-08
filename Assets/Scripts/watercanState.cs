@@ -60,7 +60,7 @@ public class watercanState : MonoBehaviour
             water.Play();
 
             //Water Can Rotation
-            transform.position = new Vector3(3.5f, 0, 0);
+            transform.position = new Vector3(4.5f, 0, 0);
             transform.Rotate(Vector3.forward, turnSpeed * Time.deltaTime);
        
             yield return 0;

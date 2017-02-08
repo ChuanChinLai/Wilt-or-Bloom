@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 932368377e6ebb048b15c113eacc5d81
+timeCreated: 1486587881
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Marker Felt
+  fontNames:
+  - Marker Felt
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

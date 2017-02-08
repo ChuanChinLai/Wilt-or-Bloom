@@ -53,11 +53,17 @@ public class bagState : MonoBehaviour
         //rotate 2 seconds
         for(float i = 0; i <= 2.0f; i += Time.deltaTime)
         {
-            transform.position = new Vector3(-3.7f, 1.0f, 0);
+            transform.position = new Vector3(-2.7f, 1.0f, 0);
 
             if (i >= 1.0f)
             {
-                fertilizerObject.transform.localPosition = new Vector3(-2.5f, 1.5f, -2.0f);
+                fertilizerObject.transform.localPosition = new Vector3(-1.5f, 1.3f, -2.0f);
+
+                if (!fertilizerObject.GetComponent<AudioSource>().isPlaying)
+                {
+                    fertilizerObject.GetComponent<Sound>().playOnce();
+                }
+
                 fertilizer.Play();
             }
                 

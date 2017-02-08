@@ -34,8 +34,9 @@ public class objDragging : MonoBehaviour
         if (hit.collider != null && hit.collider.name == this.gameObject.name && Input.GetMouseButtonDown(0))
         {
             isLocking = true;
+            GetComponent<Sound>().playOnce();
 
-            if(parameters.fertilizerReady == false || parameters.waterReady == false)
+            if (parameters.fertilizerReady == false || parameters.waterReady == false)
             {
                 Target.SetActive(true);
                 Target.GetComponent<Image>().sprite = GetComponent<SpriteRenderer>().sprite;

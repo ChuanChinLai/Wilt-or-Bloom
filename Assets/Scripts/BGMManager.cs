@@ -4,7 +4,6 @@ using System.Collections;
 public class BGMManager : MonoBehaviour 
 {
 
-
     public AudioClip _AudioClip_day;
     public AudioClip _AudioClip_night;
 
