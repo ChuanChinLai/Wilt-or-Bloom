@@ -14,24 +14,25 @@ public class optionsBase : MonoBehaviour
 	// Use this for initialization
 	void Start () 
     {
-        //Day 1: 
-        questions.Add("Something terrible happened to me. I don’t know what to do.");
-        
+
         List<string> dailyOption = new List<string>();
+        List<string> dailyHint = new List<string>();
+        //Day 1: 
+        questions.Add("Something terrible happened to me. I don’t know what to do...");
+        
         dailyOption.Add("I’m sorry this happened to you.");
         dailyOption.Add("Look on the bright side.");
         dailyOption.Add("We all go through struggles and hard times.");
         options.Add(dailyOption);
 
-        
-        List<string> dailyHint = new List<string>();
         dailyHint.Add("Acknowledge that the experience has affected their life. Phrases like “This must be really tough for you,” and, “I’m so glad you are sharing this with me,” help to communicate empathy.");
         dailyHint.Add("This may sound caring and optimistic, but this can lead to suppressing emotions and holding in the pain, in hope that it will go away.");
         dailyHint.Add("This response minimizes the severity of trauma's impact on a human being. It is important to note that everyone copes with trauma differently. Also, the ability to heal and recover from trauma is impacted by an individual’s  internal and external resources.");
         hints.Add(dailyHint);
+        
 
         //Day 2:
-        questions.Add("I want to be alone.");
+        questions.Add("I want to be alone...");
 
         dailyOption = new List<string>();
         dailyOption.Add("Let's go out somewhere, you’ll feel better.");
@@ -46,7 +47,7 @@ public class optionsBase : MonoBehaviour
         hints.Add(dailyHint);
 
         //Day 3:
-        questions.Add("I’m so angry I could hurt someone.");
+        questions.Add("I’m so angry I could hurt someone...");
 
         dailyOption = new List<string>();
         dailyOption.Add("Let's go out somewhere, you’ll feel better.");
@@ -61,7 +62,7 @@ public class optionsBase : MonoBehaviour
         hints.Add(dailyHint);
 
         //Day 4:
-        questions.Add("I’m too overwhelmed to deal with anything.");
+        questions.Add("I’m too overwhelmed to deal with anything...");
 
         dailyOption = new List<string>();
         dailyOption.Add("Maybe we can take it step-by-step.");
@@ -76,7 +77,7 @@ public class optionsBase : MonoBehaviour
         hints.Add(dailyHint);
 
         //Day 5:
-        questions.Add("I’m always messing up and can’t do anything right.");
+        questions.Add("I’m always messing up and can’t do anything right...");
 
         dailyOption = new List<string>();
         dailyOption.Add("Let me help you figure things out.");
@@ -92,7 +93,7 @@ public class optionsBase : MonoBehaviour
 
 
         //Day 6:
-        questions.Add("I don’t want to talk to you about this right now.");
+        questions.Add("I don’t want to talk to you about this right now...");
 
         dailyOption = new List<string>();
         dailyOption.Add("If you can't talk about it, you won’t get better.");
@@ -108,7 +109,7 @@ public class optionsBase : MonoBehaviour
 
 
         //Day 7:
-        questions.Add("I deserve to feel this way. This is my fault.");
+        questions.Add("I deserve to feel this way. This is my fault...");
 
         dailyOption = new List<string>();
         dailyOption.Add("You shouldn’t have put yourself in that situation.");
