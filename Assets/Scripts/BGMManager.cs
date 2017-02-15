@@ -27,6 +27,7 @@ public class BGMManager : MonoBehaviour
 
     public void musicTransition()
     {
+        /*
         if (_AudioSource.clip == _AudioClip_day)
         {
             _AudioSource.clip = _AudioClip_night;
@@ -37,6 +38,7 @@ public class BGMManager : MonoBehaviour
             _AudioSource.clip = _AudioClip_day;
             _AudioSource.Play();
         }
+        */
     }
         
 }

@@ -53,7 +53,8 @@ public class flowerState : MonoBehaviour
 
                 if (parameters.playerAnswer[parameters.day] == answerbase.bestAnswer[parameters.day])
                 {
-                    state += 1;
+
+                    StartCoroutine(stateChange(1));
                     Good_Feedback_Particle.Play();
 
                     transform.GetChild(0).gameObject.SetActive(true);
@@ -62,13 +63,13 @@ public class flowerState : MonoBehaviour
                 }
                 else if (parameters.playerAnswer[parameters.day] == answerbase.worstAnswer[parameters.day])
                 {
-                    state -= 1;
+                    StartCoroutine(stateChange(-1));
                     Bad_Feedback_Particle.Play();
+
+                    transform.GetChild(1).gameObject.SetActive(true);
 
                     Debug.Log("WORSE");
                 }
-
-                GetComponent<SpriteRenderer>().sprite = flowerSprites[state];
             }
         }
 
@@ -79,5 +80,14 @@ public class flowerState : MonoBehaviour
         Good_Feedback_Particle.Stop();
         Bad_Feedback_Particle.Stop();
     }
+
+
+    IEnumerator stateChange(int delta)
+    {
+        yield return new WaitForSeconds(1.5f);
+        state += delta;
+        GetComponent<SpriteRenderer>().sprite = flowerSprites[state];
+    }
+
 
 }
