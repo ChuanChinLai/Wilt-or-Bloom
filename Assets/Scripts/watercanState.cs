@@ -53,6 +53,7 @@ public class watercanState : MonoBehaviour
     IEnumerator rotate()
     {
         //rotate 2 seconds
+        water.GetComponent<Sound>().playOnce();
         for (float i = 0; i <= 2.0f; i += Time.deltaTime)
         {
             //Water Particle System

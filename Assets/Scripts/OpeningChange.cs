@@ -8,20 +8,24 @@ public class OpeningChange : MonoBehaviour
     public Sprite BGI;
     Image image;
 
+    public GameObject start;
+    public GameObject Resource;
+    public GameObject Exit;
+
 
     bool isPlay = false;
     // Use this for initialization
-    void Start ()
+    void Start()
     {
         image = gameObject.GetComponent<Image>();
 
 
     }
-	
-	// Update is called once per frame
-	void Update ()
+
+    // Update is called once per frame
+    void Update()
     {
-        if(isPlay == false)
+        if (isPlay == false)
         {
             isPlay = true;
             StartCoroutine(play());
@@ -40,7 +44,7 @@ public class OpeningChange : MonoBehaviour
             yield return 0;
         }
 
-        yield return new WaitForSeconds(3.0f);
+        yield return new WaitForSeconds(1.5f);
 
         for (float i = 0; i <= 2.5f; i += Time.fixedDeltaTime)
         {
@@ -59,15 +63,8 @@ public class OpeningChange : MonoBehaviour
             yield return 0;
         }
 
-
-        /*
-        for (int i = 0; i < 255; i++)
-        {
-            image.color = new Color(i, i, i, 255);
-            yield return new WaitForSeconds(0.1f);
-        }
-        */
+        start.SetActive(true);
+        Resource.SetActive(true);
+        Exit.SetActive(true);
     }
-
-
 }

@@ -84,8 +84,9 @@ public class flowerState : MonoBehaviour
 
     IEnumerator stateChange(int delta)
     {
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(1.0f);
         state += delta;
+        GetComponent<Animator>().SetInteger("flower_state", state);
         GetComponent<SpriteRenderer>().sprite = flowerSprites[state];
     }
 

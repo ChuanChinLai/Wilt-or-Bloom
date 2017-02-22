@@ -25,8 +25,9 @@ public class pumpWater : MonoBehaviour
 
         if (hit.collider != null && Input.GetMouseButtonDown(0) && hit.collider.name == this.gameObject.name)
         {
- //           Instantiate(water, new Vector2(6.68f, -0.8f), Quaternion.identity);
+            //           Instantiate(water, new Vector2(6.68f, -0.8f), Quaternion.identity);
 
+            GetComponent<Sound>().playOnce();
             if (animator.GetBool("play") == false)
             {
                 animator.SetBool("play", true);
