@@ -12,6 +12,9 @@ public class dayTransition : MonoBehaviour
     public GameObject BGM_Ojects;
     BGMManager BGM_manager;
 
+    public GameObject UI;
+
+
     //night mask image:
     Image image;
 
@@ -49,6 +52,8 @@ public class dayTransition : MonoBehaviour
         }
             
         parameters.gotoNextDay();
+        UI.GetComponent<UIDisplay>().displayed = false;
+
 
         for(float i = 0; i <= 2.5f; i += Time.deltaTime)
         {

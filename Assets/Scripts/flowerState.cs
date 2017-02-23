@@ -55,6 +55,7 @@ public class flowerState : MonoBehaviour
                 {
 
                     StartCoroutine(stateChange(1));
+
                     Good_Feedback_Particle.Play();
 
                     transform.GetChild(0).gameObject.SetActive(true);
@@ -63,6 +64,7 @@ public class flowerState : MonoBehaviour
                 }
                 else if (parameters.playerAnswer[parameters.day] == answerbase.worstAnswer[parameters.day])
                 {
+
                     StartCoroutine(stateChange(-1));
                     Bad_Feedback_Particle.Play();
 

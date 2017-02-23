@@ -18,11 +18,11 @@ public class optionsBase : MonoBehaviour
         List<string> dailyOption = new List<string>();
         List<string> dailyHint = new List<string>();
         //Day 1: 
-        questions.Add("Something terrible happened to me. I don’t know what to do...");
+        questions.Add("Something terrible happened to me...");
         
         dailyOption.Add("I’m sorry this happened to you.");
         dailyOption.Add("Look on the bright side.");
-        dailyOption.Add("We all go through struggles and hard times.");
+        dailyOption.Add("We all go through struggles.");
         options.Add(dailyOption);
 
         dailyHint.Add("Acknowledge that the experience has affected their life. Phrases like “This must be really tough for you,” and, “I’m so glad you are sharing this with me,” help to communicate empathy.");
@@ -37,7 +37,7 @@ public class optionsBase : MonoBehaviour
         dailyOption = new List<string>();
         dailyOption.Add("Let's go out somewhere, you’ll feel better.");
         dailyOption.Add("It is just a matter of time, you’ll be fine.");
-        dailyOption.Add("Okay, I’ll leave you alone, but just know that I’m here for you.");
+        dailyOption.Add("I’ll leave you alone, but know that I’m here for you.");
         options.Add(dailyOption);
 
         dailyHint = new List<string>();
@@ -50,8 +50,8 @@ public class optionsBase : MonoBehaviour
         questions.Add("I’m so angry I could hurt someone...");
 
         dailyOption = new List<string>();
-        dailyOption.Add("Let's go out somewhere, you’ll feel better.");
-        dailyOption.Add("I can see you are very upset, I am sorry you have to deal with this.");
+        dailyOption.Add("You shouldn’t hurt other people.");
+        dailyOption.Add("I am sorry you have to deal with this.");
         dailyOption.Add("Yeah, maybe that would make you feel better.");
         options.Add(dailyOption);
 
@@ -62,12 +62,12 @@ public class optionsBase : MonoBehaviour
         hints.Add(dailyHint);
 
         //Day 4:
-        questions.Add("I’m too overwhelmed to deal with anything...");
+        questions.Add("I’m too overwhelmed to do anything...");
 
         dailyOption = new List<string>();
         dailyOption.Add("Maybe we can take it step-by-step.");
         dailyOption.Add("It won’t always be like that.");
-        dailyOption.Add("Think positive, there are other ways to deal with this.");
+        dailyOption.Add("There are other ways to deal with this.");
         options.Add(dailyOption);
 
         dailyHint = new List<string>();
@@ -77,11 +77,11 @@ public class optionsBase : MonoBehaviour
         hints.Add(dailyHint);
 
         //Day 5:
-        questions.Add("I’m always messing up and can’t do anything right...");
+        questions.Add("I can’t do anything right...");
 
         dailyOption = new List<string>();
         dailyOption.Add("Let me help you figure things out.");
-        dailyOption.Add("Let’s go do something to take your mind off things.");
+        dailyOption.Add("Let’s go somewhere to take your mind off things.");
         dailyOption.Add("That’s not true, you do plenty of things right.");
         options.Add(dailyOption);
 
@@ -98,7 +98,7 @@ public class optionsBase : MonoBehaviour
         dailyOption = new List<string>();
         dailyOption.Add("If you can't talk about it, you won’t get better.");
         dailyOption.Add("Okay, let me know if you need anything.");
-        dailyOption.Add("Perhaps there is someone else you would like to speak to instead.");
+        dailyOption.Add("Maybe there’s someone else you could talk to instead.");
         options.Add(dailyOption);
 
         dailyHint = new List<string>();
@@ -114,7 +114,7 @@ public class optionsBase : MonoBehaviour
         dailyOption = new List<string>();
         dailyOption.Add("You shouldn’t have put yourself in that situation.");
         dailyOption.Add("We all make mistakes.");
-        dailyOption.Add("This isn’t your fault and you shouldn’t blame yourself.");
+        dailyOption.Add("This isn’t your fault. You shouldn’t blame yourself.");
         options.Add(dailyOption);
 
         dailyHint = new List<string>();

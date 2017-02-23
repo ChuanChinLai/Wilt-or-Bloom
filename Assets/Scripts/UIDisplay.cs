@@ -11,6 +11,7 @@ public class UIDisplay : MonoBehaviour
     public GameObject INFO;
     public GameObject NEXT_DAY;
 
+    public bool displayed = false;
 
     // Use this for initialization
     void Start ()
@@ -21,7 +22,10 @@ public class UIDisplay : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-        display();
+        if(displayed == false)
+        {
+            display();
+        }
     }
 
 
@@ -36,6 +40,7 @@ public class UIDisplay : MonoBehaviour
         {
             INFO.SetActive(true);
             NEXT_DAY.SetActive(true);
+            displayed = true;
         }
     }
 

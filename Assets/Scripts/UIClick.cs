@@ -7,6 +7,7 @@ public class UIClick : MonoBehaviour
     public GameObject question;
     public GameObject popWindow;
     public GameObject nightMask;
+    public GameObject m_INFO;
 
 
     public bool Isclicked = false;
@@ -14,13 +15,17 @@ public class UIClick : MonoBehaviour
     // Use this for initialization
     void Start ()
     {
-	
+
 	}
 	
 	// Update is called once per frame
 	void Update ()
     {
-        
+        if (popWindow.activeSelf == true && m_INFO.activeSelf == true)
+        {
+            m_INFO.SetActive(false);
+
+        }
     }
 
     void displayWindow()
@@ -70,6 +75,7 @@ public class UIClick : MonoBehaviour
     {
         popWindow.SetActive(false);
         question.SetActive(true);
+        m_INFO.SetActive(true);
     }
         
 }
