@@ -56,17 +56,24 @@ public class UIClick : MonoBehaviour
 
     public void displayQuestion(GameObject iObject)
     {
-        popWindow.SetActive(true);
-        question.SetActive(false);
+        if(popWindow.activeSelf == false)
+        {
+            popWindow.SetActive(true);
+            question.SetActive(false);
 
-        popWindow.transform.GetChild(5).gameObject.SetActive(true);
-        popWindow.transform.GetChild(5).gameObject.GetComponent<Text>().text = iObject.GetComponent<Text>().text;
+            popWindow.transform.GetChild(5).gameObject.SetActive(true);
+            popWindow.transform.GetChild(5).gameObject.GetComponent<Text>().text = iObject.GetComponent<Text>().text;
 
 
-        popWindow.transform.GetChild(1).gameObject.SetActive(false);
-        popWindow.transform.GetChild(2).gameObject.SetActive(false);
-        popWindow.transform.GetChild(3).gameObject.SetActive(false);
-        popWindow.transform.GetChild(4).gameObject.SetActive(false);
+            popWindow.transform.GetChild(1).gameObject.SetActive(false);
+            popWindow.transform.GetChild(2).gameObject.SetActive(false);
+            popWindow.transform.GetChild(3).gameObject.SetActive(false);
+            popWindow.transform.GetChild(4).gameObject.SetActive(false);
+        }
+        else
+        {
+            closeWindow();
+        }
     }
 
 
