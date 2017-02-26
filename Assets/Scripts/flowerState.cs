@@ -59,8 +59,6 @@ public class flowerState : MonoBehaviour
                     Good_Feedback_Particle.Play();
 
                     transform.GetChild(0).gameObject.SetActive(true);
-
-                    Debug.Log("BEST");
                 }
                 else if (parameters.playerAnswer[parameters.day] == answerbase.worstAnswer[parameters.day])
                 {
@@ -69,8 +67,6 @@ public class flowerState : MonoBehaviour
                     Bad_Feedback_Particle.Play();
 
                     transform.GetChild(1).gameObject.SetActive(true);
-
-                    Debug.Log("WORSE");
                 }
             }
         }

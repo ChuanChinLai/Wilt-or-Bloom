@@ -71,7 +71,7 @@ public class optionsBase : MonoBehaviour
         options.Add(dailyOption);
 
         dailyHint = new List<string>();
-        dailyHint.Add("Maybe there are some situations or issues which are bothering them and they don’t know how to communicate it to others. This response can help them figure out what they can do to alleviate the overwhelming feeling. Be cautious, as the person may not be looking for advice, and instead just want you to listen.");
+        dailyHint.Add("This response can help them figure out what they can do to alleviate the overwhelming feeling. Be cautious, as the person may not be looking for advice, and instead just want you to listen.");
         dailyHint.Add("With this response, the individual may feel that you are dismissing the challenges they are going through or underestimating the traumatic experience. We never want to make the person feel like their emotions and feelings are invalid, so this is most likely not a good response as it can be interpreted in a negative way.");
         dailyHint.Add("This is a vague response that may be perceived that you do not understand the seriousness of the situation they are in. Telling someone to think positive will likely not result in a solution or feeling of care from you.");
         hints.Add(dailyHint);
@@ -86,8 +86,8 @@ public class optionsBase : MonoBehaviour
         options.Add(dailyOption);
 
         dailyHint = new List<string>();
-        dailyHint.Add("The individual may appreciate the offer, but may also perceive this as overstepping boundaries. If the person says “no thank you,” it could be beneficial to not push the matter any further. If the person accepts the offer, listening to them about their struggles is very important. From there, you may be able to offer some advice or words of encouragement.");
-        dailyHint.Add("Offering an outlet to take their mind off of the issues could be helpful temporarily, but it is important to not force the individual to do anything, as this may have the opposite effect and may close them off from asking others for help. If the person accepts the offer to go do something, this could be a good opportunity for them to talk about what they’re struggling with, but it is imperative that the never feel forced into discussion.");
+        dailyHint.Add("The individual may appreciate the offer, but may also perceive this as overstepping boundaries. If the person says “no thank you,” it could be beneficial to not push the matter any further. If the person accepts the offer, listening to them about their struggles is very important. From there, you may be able to offer words of encouragement.");
+        dailyHint.Add("This could be helpful temporarily, but it’s important to not force the individual to do anything, as this may have the opposite effect and may close them off from asking others for help. If the person accepts the offer, this could be an opportunity for them to talk about what they’re struggling with, but it’s imperative that they never feel forced into discussion.");
         dailyHint.Add("This response could encourage a more positive mindset, especially if you bring up example of times they have done things right. With this response, it is still very important to listen to them and to ensure you do not dismiss their emotions.");
         hints.Add(dailyHint);
 
@@ -102,9 +102,9 @@ public class optionsBase : MonoBehaviour
         options.Add(dailyOption);
 
         dailyHint = new List<string>();
-        dailyHint.Add("Forcing or making someone feel obligated to discuss traumatic experiences almost always ends negatively for both people. One of the first priorities should be to respect the other person, and by trying to force them to speak is not a way to show your respect. We understand that this can be challenging, especially if you care deeply about the person, but this response could lead to more pain and the individual refusing to approach you again.");
+        dailyHint.Add("Forcing someone to discuss traumatic experiences almost always ends negatively. One of the first priorities should be to respect the other person and forcing them to speak is not a way to show your respect. This can be challenging, especially if you care deeply about the person, but this response could lead to more pain and the individual refusing to approach you again.");
         dailyHint.Add("This response allows the individual to not talk about their situation, but at the same time opens the door for them to approach you when they feel ready. Keep in mind they may not go to you for support, but just offering your time in this way can help them see how much you care for them.");
-        dailyHint.Add("By trying to help the individual find an alternative person to speak with, this could help them think of another person they would be more comfortable speaking with. Depending on their mood though, trying to recommend anything at all could make them result in being defensive or shutting down. It is important to listen to them and how their current mood is before responding in this way.");
+        dailyHint.Add("By trying to help the individual find an alternative person to speak with, this could help them think of another person they would be more comfortable speaking with. Depending on their mood though, trying to recommend anything at all could result in them being defensive or shutting down. It’s important to listen to them and how their current mood is before responding in this way.");
         hints.Add(dailyHint);
 
 
